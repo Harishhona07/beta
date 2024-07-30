@@ -1520,9 +1520,20 @@ hr.fancy::before {
 .lead,
 .attention-getter {
   font-family: var(--font-1);
-  font-size: var(--text-md);
+  /* font-size: var(--text-md); */
+  font-size: 2rem;
   line-height: var(--vspace-1_25);
   text-align: justify;
+
+}
+
+.attention-con {
+  position: relative;
+}
+
+.abt-scrolldown {
+  left: 90%;
+  border-color: black;
 }
 
 @media screen and (max-width: 800px) {
@@ -4347,6 +4358,7 @@ textarea {
   width: 100%;
   height: 50px;
 }
+
 .s-footer__about>* {
   width: min(100%, 560px);
 }
@@ -4586,6 +4598,7 @@ textarea {
   background: transparent;
   transition: border-color 0.2s;
 }
+
 .form__field::selection {
   background: white;
   color: black;
@@ -4595,7 +4608,7 @@ textarea {
   color: transparent;
 }
 
-.form__field:placeholder-shown ~ .form__label {
+.form__field:placeholder-shown~.form__label {
   font-size: 17px;
   cursor: text;
   top: 20px;
@@ -4618,7 +4631,7 @@ textarea {
   border-image-slice: 1;
 }
 
-.form__field:focus ~ .form__label {
+.form__field:focus~.form__label {
   position: absolute;
   top: 0;
   display: block;
@@ -4628,6 +4641,7 @@ textarea {
 }
 
 /* reset input */
-.form__field:required, .form__field:invalid {
+.form__field:required,
+.form__field:invalid {
   box-shadow: none;
 }
